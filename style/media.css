@@ -1,0 +1,348 @@
+@media(max-width: 1200px){
+    .subheader_tab{
+        padding-top: 27px;
+    }
+    #menu__toggle{
+        display: none;
+    }
+   .btn_email{
+       width: 180px;
+       font-size: 16px;
+       border: none
+   }
+    .brands{
+        width: 1200px;
+    }
+    .collection_watches img{
+        margin-right: 10px;
+    }
+    .collection_watch{
+        width: 730px;
+        margin-bottom: 3px;
+    }
+    .products .row{
+        margin-right: -12px;
+        margin-left: 24px;
+    }
+
+}
+@media (max-width: 991px) {
+    .subheader form{
+        display: none;
+    }
+    .brands{
+        max-width: 991px;
+    }
+    .products .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .subheader_tab{
+        padding: 21px;
+        padding-top: 26px;
+        padding-bottom: 35px;
+    }
+    .btn_email{
+        position: absolute;
+        top: 260px;
+        left: 14px;
+        width: 175px;
+        font-size: 14px;
+    }
+    .email{
+        width: 175px;
+    }
+    .shop .row{
+        margin-right: -34px;
+    }
+    .brands img{
+        width: 170px;
+    }
+    .products img{
+        width: 150px;
+    }
+    .collection img{
+        width: 130px;
+    }
+    .collection_title{
+        font-size: 15px;
+    }
+    .collection_subtitle{
+        font-size: 14px;
+    }
+    .collection_btn{
+        font-size: 13px;
+    }
+}
+@media(max-width: 776px) {
+    .brands{
+        width: 776px;
+    }
+    .reasons_discr{
+        width: 600px;
+
+    }
+    .carousel-item img{
+        height: 600px;
+    }
+    .reasons_text{
+        font-size: 14px;
+    }
+    .collection img{
+        width: 100px;
+    }
+    .collection_title{
+        font-size: 12px;
+    }
+    .collection_subtitle{
+        font-size: 12px;
+    }
+    .collection_btn{
+        font-size: 10px;
+    }
+    .collection_watch{
+        padding: 23px;
+    }
+    .carousel-caption span{
+        font-size: 29px;
+    }
+    .carousel-item img{
+        height: 541px;
+    }
+    .carousel_line{
+        width: 100px;
+    }
+    .reasons{
+        margin-top: -160px;
+    }
+    .reasons_btn{
+        margin-top: 45px;
+    }
+    .products{
+        margin-top: -210px;
+    }
+    .products .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 576px) {
+    .hamburger-menu{
+        display: flex;
+    }
+    .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 15px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        color: #FFFFFF;
+    }
+    .subheader_tab_shop{
+        display: none;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .subheader{
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        z-index: 1;
+    }
+    .subheader_logo{
+        margin-top: 15px;
+    }
+    .subheader_tabs {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #000000;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .subheader_tab_a {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .subheader_tab_a:hover {
+        background-color: #CFD8DC;
+    }
+    .subheader_tab_shop {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .subheader_tabs {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .subheader_tabs {
+        transition-duration: .25s;
+    }
+    .subheader_tab_a {
+        transition-duration: .25s;
+    }
+    .subheader_tab_shop {
+        transition-duration: .25s;
+    }
+    nav{
+        display: none;
+    }
+    .promo img{
+        width: 250px;
+    }
+    .carousel{
+        display: none;
+    }
+    .collection_watch{
+        height: 696px;
+    }
+    .brands{
+        width: 576px;
+    }
+    .products{
+        margin-top: -50px;
+    }
+    .products img{
+        width: 100px;
+    }
+    .products_title{
+        font-size: 15px;
+    }
+    .products_descr{
+        font-size: 15px;
+    }
+    .products_btn{
+        font-size: 10px;
+    }
+    .product_header{
+        font-size: 32px;
+    }
+    .reasons_logo{
+        font-size: 32px;
+    }
+    .collection_header{
+        font-size: 32px;
+    }
+    .brands_title{
+        font-size: 32px;
+    }
+    .btn_email{
+        margin-left: 176px;
+        margin-top: -28px;
+    }
+    .shop_title{
+        text-align: center;
+    }
+    .pageup{
+        display: none;
+    }
+}
+@media (max-width: 320px){
+    .promo{
+        display: none;
+    }
+    .collection_watch{
+        margin-left: 90px;
+        padding-top: 70px;
+    }
+    .reasons_discr{
+        margin-left: 90px;
+        margin-top: 60px;
+    }
+    .products{
+        margin-left: 130px;
+    }
+    .products img{
+        width: 250px;
+    }
+    .products_title{
+        font-size: 28px;
+        margin-left: 22px;
+    }
+    .products_descr{
+        font-size: 24px;
+        margin-left: 67px;
+    }
+    .products_btn{
+        margin-left: 70px;
+    }
+    .brands .row{
+        margin-left: 170px;
+    }
+    .shop {
+        width: 557px;
+        background: none;
+    }
+    .shop_subtitle{
+        text-align: center;
+    }
+    footer{
+        display: none;
+    }
+    .btn_email{
+        position: absolute;
+        top: 260px;
+        left: 125px;
+    }
+    .email{
+        margin-left: 111px;
+    }
+    .menu__btn{
+        margin-left: -22px;
+    }
+}
+
+
+
